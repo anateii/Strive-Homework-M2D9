@@ -135,6 +135,10 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
         (If you want, you can also add extra columns)
     -->
 
+     <!-- EXERCISE 5
+        Add a DELETE bootstrap button at the end of each row of the tracklist. 
+        Attach the functionality to remove its row when it gets clicked. (Requires DOM manipulation)-->  
+
 
     <section>
         <div class="container mt-5 ">
@@ -145,6 +149,7 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
       <th scope="col text-white">#</th>
       <th scope="col text-white">Title</th>
       <th scope="col text-white">Track Duration</th>
+    <th></th>
     </tr>
   </thead>
   <tbody>
@@ -152,16 +157,19 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
       <th scope="row">1</th>
       <td>Woman</td>
       <td>2:52</td>
+      <td><button type="button" class="btn btn-dark" onclick="deleteRow()">Delete</button></td>
     </tr>
     <tr class="bg-custom1">
       <th scope="row">2</th>
       <td>Naked</td>
       <td>3:43</td>
+      <td><button type="button" class="btn btn-dark " onclick="deleteRow()">Delete</button></td>
     </tr>
     <tr class="bg-custom2">
       <th scope="row">3</th>
       <td>Payday</td>
       <td>3:52</td>
+      <td><button type="button" class="btn btn-dark" onclick="deleteRow()">Delete</button></td>
     </tr>
   </tbody>
 </table>
@@ -174,11 +182,7 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
         
         </section>
 
-    <!-- EXERCISE 5
-        Add a DELETE bootstrap button at the end of each row of the tracklist. 
-        Attach the functionality to remove its row when it gets clicked. (Requires DOM manipulation)  
-
-        ## EXTRA CSS CHALLENGE ##
+       <!-- ## EXTRA CSS CHALLENGE ##
         Make only one button visible at a time, for each row, when the single row gets hovered. 
         Animate it with a fade-in effect upon the user hovering and fade-out when he/she goes away from it.
     -->
@@ -223,7 +227,15 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
 
 
 
-
+<script>
+    function deleteRow() {
+     
+      let td = event.target.parentNode; 
+      let tr = td.parentNode; // the row to be removed
+      tr.parentNode.removeChild(tr)
+    }
+    
+    </script>
 
 
 

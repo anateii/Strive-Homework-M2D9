@@ -70,3 +70,9 @@ body {
     background-color: #F4B902;
     color: black;
 }
+
+
+button {
+    background-color: rgb(22, 22, 22);
+    color: whitesmoke;
+}
