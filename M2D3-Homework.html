@@ -53,7 +53,7 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
         Make it appear with a fade-in animation effect when the page loads.
     -->
 
-<div class="container-fluid">
+<div class="container-fluid jumbotrondiv">
     <div class="jumbotron text-white">
       <h1 class="display-4">Let's play some music!</h1>
       <p class="lead mt-2">Today we are going to use some animations <br> on some components inside this page..</p>
@@ -68,6 +68,58 @@ new Date,c={},d=Object.keys(a||{}),e=0,f;f=d[e];e++)if(a.hasOwnProperty(f)&&"und
         Use a Bootstrap Card to contain every album in the favorite list you previously created.
         Use the elements of a card bootstrap provides you with to display nicely the album informations such as: album title, artist, year, etc..
     -->
+
+
+<div class="container">
+    <h1 class=" mt-5">FAVORITE LIST</h1>
+    <div class="row mx-1 mt-4">
+        <div class="col-4">
+    <div class="card">
+      <img src="./assets/PlanetHer.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><strong>Planet Her</strong></h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Album: Planet Her</li>
+        <li class="list-group-item">Artist: Dojacat</li>
+        <li class="list-group-item">Year: 2020</li>
+      </ul>
+   
+    </div>
+</div>
+
+<div class="col-4">
+    <div class="card">
+      <img src="./assets/dawnfm.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><strong>Dawn FM</strong></h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Album: Dawn FM</li>
+        <li class="list-group-item">Artist: TheWeeknd</li>
+        <li class="list-group-item">Year: 2022</li>
+      </ul>
+     
+    </div>
+</div>
+<div class="col-4">
+    <div class="card">
+      <img src="./assets/am.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><strong>AM</strong></h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Album: AM</li>
+        <li class="list-group-item">Artist: Arctic Monkeys</li>
+        <li class="list-group-item">Year: 2013</li>
+      </ul>
+     
+    </div>
+</div>
+</div>
+</div>
+
+
 
     <!-- EXERCISE 3
         For every album in the favorite list, attach a badge on the top-left corner of the album with the genre of the music
