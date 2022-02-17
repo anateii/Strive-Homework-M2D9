@@ -49,3 +49,24 @@ body {
     font-weight: bold;
     font-size: 20px;
 }
+
+
+.bg-tr {
+    background-color: rgb(22, 22, 22);
+    color: #F4B902;
+}
+
+.bg-custom {
+    background-color: #f8e5aa;
+    color: black;
+}
+.bg-custom1 {
+    background-color: #f7d160 ;
+    color: black;
+    
+}
+
+.bg-custom2 {
+    background-color: #F4B902;
+    color: black;
+}
