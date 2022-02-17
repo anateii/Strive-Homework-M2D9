@@ -31,3 +31,21 @@ body {
     text-align: center;
     color: #F4B902;
 }
+
+
+.card {
+    border: none;
+}
+.card img {
+    position: relative;
+}
+
+.badge-on-image {
+    position: absolute;
+    top:0x;
+    left:-4px;
+    background-color: #F4B902;
+    color:rgb(22, 22, 22);
+    font-weight: bold;
+    font-size: 20px;
+}
